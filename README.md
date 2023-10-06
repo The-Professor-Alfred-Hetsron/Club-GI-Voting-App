@@ -1,2 +1,2 @@
-# Club_GI_Voting_App
+# Club-GI-Voting-App
 Web Application to Register candidatures and vote
