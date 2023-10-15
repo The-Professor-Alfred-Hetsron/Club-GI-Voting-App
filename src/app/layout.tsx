@@ -1,12 +1,13 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { slogan, appName } from "@/config/appconfig"
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Club GI VoteHub',
-  description: 'Voting Application For Club GI bureau',
+  title:`${appName} - Voting App`,
+  description: slogan,
 }
 
 export default function RootLayout({

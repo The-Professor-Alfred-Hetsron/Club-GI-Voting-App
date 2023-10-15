@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'WHISKYGIRLS';
+    src: url('/assets/fonts/whiskeygirls.ttf');
+  }
+
+  .fancy-principal{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+  }
+
+  .fancy-topleft{
+    border-radius: 54% 46% 25% 75% / 44% 9% 91% 56%   ;
+  }
+
+  .fancy-topright{
+    border-radius: 18% 82% 43% 57% / 82% 50% 50% 18%   ;
+  }
+
+  .fancy-bottomleft{
+    border-radius: 71% 29% 61% 39% / 22% 65% 35% 78%   ;
+  }
+
+  .fancy-bottomright{
+    border-radius: 43% 57% 43% 57% / 71% 65% 35% 29%   ;
+  }

@@ -16,9 +16,11 @@ const config: Config = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        'primary': '#F2AA06',
-        'secondary': '#009DDC',
-        'tertiary': '#0958A9',
+        'primary1':'#7F2D6F',
+        'primary1Trans': 'rgba(127,45,111,0.8)',
+        'primary2':'#EF316D',
+        'primary3':'#F6A935',
+        'primary4':'#3A3134',
         'lightBlue': '#E8F2F8',
         'whiteTone': '#F9F9F9',
         'grayToneStroke': '#B8BFCC',
@@ -26,6 +28,9 @@ const config: Config = {
         'grayTone2': '#6C768A',
         'grayTone3': '#A0ABC0',
         'textDarkTone': '#23252F',
+      },
+      fontFamily:{
+        'whiskygirls' : 'WHISKYGIRLS',
       },
       dropShadow: {
         '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
