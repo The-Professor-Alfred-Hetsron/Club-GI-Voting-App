@@ -10,7 +10,8 @@ export default function Home() {
 
       <div className={`w-screen h-screen px-8 py-8 bg-primary1Trans flex flex-row justify-center items-center`}>
         <div className="w-full h-screen flex flex-col gap-8 justify-center">
-          <span className="text-white text-[50px] font-bold">{appName}</span>
+          <Image src='/assets/img/votehub.png' alt="Club GI" width={500} height={500} className="w-[200px] drop-shadow-2xl"/>
+          <Image src='/assets/img/clubgi.png' alt="Club GI" width={500} height={500} className="w-[300px]"/>
           <span className="text-white uppercase text-[30px] text-left">{slogan}</span>
           <button className="w-[200px] p-3 text-white text-[25px] bg-primary3 rounded-full drop-shadow-lg shadow-lg hover:bg-white hover:text-primary3 hover:border-4 hover:border-primary3 hover:scale-105 hover:ease-in-out">
             Login
