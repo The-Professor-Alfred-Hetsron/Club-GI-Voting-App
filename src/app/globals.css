@@ -26,3 +26,26 @@
   .fancy-bottomright{
     border-radius: 43% 57% 43% 57% / 71% 65% 35% 29%   ;
   }
+
+  .scrollbar-hide::-webkit-scrollbar{
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    @apply bg-grayToneStroke;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    @apply bg-primary2 rounded-full;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary3
+}
