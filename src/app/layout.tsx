@@ -27,7 +27,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#da532c"/>
         <meta name="theme-color" content="#A64AEE"/>
       </head>
-      <body className={`${inter.className} md:hidden`}>{children}</body>
+      <body className={`${inter.className} lg:hidden`}>{children}</body>
     </html>
   )
 }
