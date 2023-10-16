@@ -6,6 +6,44 @@ export const pageXMargin = '40px'
 
 export const currentYear = '2022 - 2023'
 
+export const loginErrorMsg = 'Your Pseudo Name or your Matricule is not valid'
+
+import { LoginBgBlurImageType } from "@/types/loginbgblurImg"
+export const loginBluImg:Array<LoginBgBlurImageType> = [
+    {
+        imgPath:'/assets/img/login/ml.jpg',
+        transform: 'w-[500px] top-0 left-0'
+    },
+    {
+        imgPath:'/assets/img/login/mlp.jpg',
+        transform: 'w-[300px] top-0 right-0'
+    },
+    {
+        imgPath:'/assets/img/login/cyber.jpeg',
+        transform: 'w-[300px] bottom-0 left-0'
+    },
+    {
+        imgPath:'/assets/img/login/cyber2.jpeg',
+        transform: 'w-[300px] bottom-0 right-0'
+    },
+    // {
+    //     imgPath:'/assets/img/login/soft1.jpeg',
+    //     transform: 'top-0 left-0'
+    // },
+    // {
+    //     imgPath:'/assets/img/login/soft2.webp',
+    //     transform: 'top-0 left-0'
+    // },
+    // {
+    //     imgPath:'/assets/img/login/uiux.webp',
+    //     transform: 'top-0 left-0'
+    // },
+    // {
+    //     imgPath:'/assets/img/login/uiux2.jpg',
+    //     transform: 'top-0 left-0'
+    // },
+]
+
 import BureauMemberType from "@/types/bureauMember"
 export const currentBureau:Array<BureauMemberType> = [
     {

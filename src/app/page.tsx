@@ -1,21 +1,26 @@
+'use client'
 import Image from "next/image";
-import { slogan, pageXMargin, appName, currentBureau, currentYear } from "@/constant/appInfo"
-import { CurrentMemberCard, Footer } from "@/components";
+import { slogan, currentBureau, currentYear } from "@/constant/appInfo"
+import { CurrentMemberCard, Footer, CustomButton } from "@/components";
 import BureauMemberType from "@/types/bureauMember";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter()
 
   return (
-    <main className="sm:hidden h-screen w-screen bg-[url('/assets/img/bureau/bureau2022-23.jpg')] bg-no-repeat bg-cover overflow-y-auto overflow-x-hidden flex flex-col">
+    <main className="h-screen w-screen bg-[url('/assets/img/bureau/bureau2022-23.jpg')] bg-no-repeat bg-cover overflow-y-auto overflow-x-hidden flex flex-col">
 
       <div className={`w-screen h-screen px-8 py-8 bg-primary1Trans flex flex-row justify-center items-center`}>
         <div className="w-full h-screen flex flex-col gap-8 justify-center">
-          <Image src='/assets/img/votehub.png' alt="Club GI" width={500} height={500} className="w-[200px] drop-shadow-2xl"/>
+          <Image src='/assets/img/votehub.png' alt="VoteHub" width={500} height={500} className="w-[200px] drop-shadow-2xl"/>
           <Image src='/assets/img/clubgi.png' alt="Club GI" width={500} height={500} className="w-[300px]"/>
           <span className="text-white uppercase text-[30px] text-left">{slogan}</span>
-          <button className="w-[200px] p-3 text-white text-[25px] bg-primary3 rounded-full drop-shadow-lg shadow-lg hover:bg-white hover:text-primary3 hover:border-4 hover:border-primary3 hover:scale-105 hover:ease-in-out">
-            Login
-          </button>
+          <CustomButton
+            label="Login"
+            width={200}
+            action={()=>{router.push('/auth')}}
+          />
         </div>
         <div className="w-full h-screen relative flex justify-end items-center">
           <Image src='/assets/img/enspy/logo.png' width={400} height={400} alt="Bureau" className="w-[200px] aspect-square absolute drop-shadow-lg shadow-md z-10 top-[320px] right-[200px]"/>

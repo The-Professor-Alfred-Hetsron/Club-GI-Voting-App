@@ -7,6 +7,11 @@
     src: url('/assets/fonts/whiskeygirls.ttf');
   }
 
+  @font-face {
+    font-family: 'PROTOTYPE';
+    src: url('/assets/fonts/Prototype.ttf');
+  }
+
   .fancy-principal{
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
   }

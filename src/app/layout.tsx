@@ -1,4 +1,5 @@
 import './globals.css'
+import '@/styles/loginForm.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { slogan, appName } from "@/constant/appInfo"
@@ -26,7 +27,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#da532c"/>
         <meta name="theme-color" content="#A64AEE"/>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} md:hidden`}>{children}</body>
     </html>
   )
 }

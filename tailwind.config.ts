@@ -28,9 +28,14 @@ const config: Config = {
         'grayTone2': '#6C768A',
         'grayTone3': '#A0ABC0',
         'textDarkTone': '#23252F',
+        'googleBlue': '#4285F4',
+        'googleGreen': '#34A853',
+        'googleYellow': '#FBBC05',
+        'googleRed': '#EA4335',
       },
       fontFamily:{
         'whiskygirls' : 'WHISKYGIRLS',
+        'prototype' : 'PROTOTYPE',
       },
       dropShadow: {
         '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
