@@ -28,7 +28,7 @@ export default function Home() {
 
       <div className="w-full pt-[200px]">
         <div className={`w-full bg-white flex flex-col gap-4 items-center px-8 py-5`}>
-          <span className="font-whiskygirls text-[50px]">Bureau Club GI COPA {currentYear}</span>
+          <span className="font-whiskygirls text-[50px] text-center">Bureau Club GI COPA {currentYear}</span>
           <div className="w-full flex flex-wrap justify-center items-center gap-5">
               {
                 currentBureau.map((member:BureauMemberType, index:number)=>{

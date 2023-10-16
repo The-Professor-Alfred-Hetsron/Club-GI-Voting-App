@@ -10,7 +10,7 @@ import BureauMemberType from "@/types/bureauMember"
 export const currentBureau:Array<BureauMemberType> = [
     {
         position: "PRESIDENT",
-        name: "TCHOUMI KARLIN",
+        name: "TCHOUMI Karlin",
         level: "4GI",
         image: "/assets/img/bureau/p.png"
     },
