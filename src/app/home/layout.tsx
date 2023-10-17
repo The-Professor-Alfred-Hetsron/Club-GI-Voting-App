@@ -1,3 +1,5 @@
+import { Header,Footer } from "@/components";
+
 export default function HomeLayout(
     { 
         children,
@@ -6,8 +8,10 @@ export default function HomeLayout(
     }
 ){
     return (
-        <div className="w-screen h-screen flex justify-center items-center">
-            
-        </div>
+        <main className="w-screen h-screen flex flex-col items-center overflow-y-auto">
+            <Header/>
+            {children}
+            <Footer/>
+        </main>
     )
 }

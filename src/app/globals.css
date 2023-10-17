@@ -47,7 +47,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    @apply bg-primary2 rounded-full;
+    @apply bg-primary1 rounded-full;
 }
 
 /* Handle on hover */

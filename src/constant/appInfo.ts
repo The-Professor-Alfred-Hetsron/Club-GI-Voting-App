@@ -26,22 +26,22 @@ export const loginBluImg:Array<LoginBgBlurImageType> = [
         imgPath:'/assets/img/login/cyber2.jpeg',
         transform: 'w-[300px] bottom-0 right-0'
     },
-    // {
-    //     imgPath:'/assets/img/login/soft1.jpeg',
-    //     transform: 'top-0 left-0'
-    // },
-    // {
-    //     imgPath:'/assets/img/login/soft2.webp',
-    //     transform: 'top-0 left-0'
-    // },
-    // {
-    //     imgPath:'/assets/img/login/uiux.webp',
-    //     transform: 'top-0 left-0'
-    // },
-    // {
-    //     imgPath:'/assets/img/login/uiux2.jpg',
-    //     transform: 'top-0 left-0'
-    // },
+    {
+        imgPath:'/assets/img/login/soft1.jpeg',
+        transform: 'top-0 left-0'
+    },
+    {
+        imgPath:'/assets/img/login/soft2.webp',
+        transform: 'top-0 left-0'
+    },
+    {
+        imgPath:'/assets/img/login/uiux.webp',
+        transform: 'top-0 left-0'
+    },
+    {
+        imgPath:'/assets/img/login/uiux2.jpg',
+        transform: 'top-0 left-0'
+    },
 ]
 
 import BureauMemberType from "@/types/bureauMember"
@@ -117,5 +117,56 @@ export const currentBureau:Array<BureauMemberType> = [
         name: "FONGANG Manuella",
         level: "3GI",
         image: "/assets/img/bureau/cacf.png"
+    }
+]
+
+export const bureauInfo = [
+    {
+        position: "PRESIDENT",
+        level: "4GI",
+    },
+    {
+        position: "VICE PRESIDENT",
+        level: "3GI",
+    },
+    {
+        position: "SECRETAIRE GENERALE",
+        level: "4GI",
+    },
+    {
+        position: "SECRETAIRE GENERALE ADJOINT",
+        level: "3GI",
+    },
+    {
+        position: "CHEF CELLULE PROJET",
+        level: "4GI",
+    },
+    {
+        position: "CHEF ADJOINT CELLULE PROJET",
+        level: "3GI",
+    },
+    {
+        position: "CHEF CELLULE COMMUNICATION",
+        level: "4GI",
+    },
+    {
+        position: "CHEF ADJOINT CELLULE COMMUNICATION",
+        level: "3GI",
+    },
+    {
+        position: "CHEF CELLULE RELATIONS EXTERIEURES",
+        level: "4GI",
+    },
+    {
+        position: "CHEF ADJOINT CELLULE RELATIONS EXTERIEURES",
+        level: "3GI",
+    },
+    {
+        position: "CHEF CELLULE FINANCIERE",
+        level: "4GI",
+    },
+    {
+        position: "CHEF ADJOINT CELLULE FINANCIERE",
+        level: "3GI",
     }
 ]

@@ -1,13 +1,15 @@
 'use client'
 
-import { InputField, BgBlurLoginImg } from "@/components"
+import { InputField } from "@/components"
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useState, useEffect } from 'react'
 import { loginErrorMsg, loginBluImg } from "@/constant/appInfo";
-import { LoginBgBlurImageType } from "@/types/loginbgblurImg"
+import { enableRegsiter, enableVote, enableResult } from "@/constant/adminConfig";
 import '@/styles/loginForm.css'
 
 export default function Auth() {
+    const router = useRouter()
     const [ pseudo, setPseudo ] = useState<string>("")
     const [ matricule, setMatricule ] = useState<string>("")
     const [ valid, setValid ] = useState<boolean>(false)
@@ -32,6 +34,18 @@ export default function Auth() {
       return {pseudoMatch:pseudoValid, matriculeMatch:matValid}
     }
 
+    const routeToEnabledPage = () => {
+      if(enableRegsiter){
+        router.push("/home/register")
+      }
+      else if(enableVote){
+        router.push("/home/vote")
+      }
+      else if(enableResult){
+        router.push("/home/result")
+      }
+    }
+
     const submitLogin = (event: React.FormEvent<HTMLFormElement>) =>{
         event.preventDefault()
         if (valid) {
@@ -39,6 +53,7 @@ export default function Auth() {
           if(pseudoMatch && matriculeMatch){
             setError(false)
             console.log("Login");
+            routeToEnabledPage()
           }
           else{
             setError(true)
@@ -53,6 +68,7 @@ export default function Auth() {
           if(pseudoMatch && matriculeMatch){
             setError(false)
             console.log("SignUp");
+            routeToEnabledPage()
           }
           else{
             setError(true)
