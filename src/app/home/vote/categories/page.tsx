@@ -16,8 +16,8 @@ export default function Categories() {
       <main className="h-full w-full relative flex flex-col">
         
         <Image src='/assets/img/background/voting3.png' alt="Background" width={600} height={600} className='w-[400px] absolute left-0 z-0'/>
-        <Image src='/assets/img/votehub-primary.png' alt="Background" width={600} height={600} className='w-[300px] absolute left-[520px] z-0'/>
-        <Image src='/assets/img/background/voting2.png' alt="Background" width={600} height={600} className='w-[500px] absolute right-4 z-0'/>
+        <Image src='/assets/img/background/voting2.png' alt="Background" width={600} height={600} className='w-[300px] absolute left-[520px] z-0'/>
+        <Image src='/assets/img/votehub-primary.png' alt="Background" width={600} height={600} className='w-[500px] absolute right-4 z-0'/>
 
         <div className="flex flex-col z-10">
           <div className="w-full h-full py-6 bg-primary1Trans flex flex-col gap-2 justify-center items-center">
