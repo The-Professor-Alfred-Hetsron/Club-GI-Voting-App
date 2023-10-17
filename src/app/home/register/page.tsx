@@ -31,7 +31,7 @@ export default function Register() {
         <span className="font-semibold text-xl">By Clicking Continue, You Agree to Choose a post and publish your Candidature</span>
 
         <button type="button" onClick={()=>{routeToCategories()}} className={`w-[500px] p-3 text-white text-[25px] bg-primary2 hover:bg-primary1 rounded-full drop-shadow-lg shadow-lg`}>
-            Continue
+            CONTINUE
         </button>
       </main>
     )

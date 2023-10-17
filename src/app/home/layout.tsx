@@ -8,7 +8,7 @@ export default function HomeLayout(
     }
 ){
     return (
-        <main className="w-screen h-screen flex flex-col items-center overflow-y-auto">
+        <main className="w-screen h-screen flex flex-col justify-between items-center overflow-y-auto">
             <Header/>
             {children}
             <Footer/>

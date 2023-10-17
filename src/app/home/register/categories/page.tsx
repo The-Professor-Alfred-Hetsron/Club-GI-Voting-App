@@ -4,11 +4,12 @@ import { bureauInfo } from "@/constant/appInfo"
 import { BureauMemberCard, CurrentPostCard } from "@/components"
 import { useRouter, usePathname } from "next/navigation";
 import DefaultBureau from "@/types/defaultBureauMember"
+import { currentPost } from "@/constant/adminConfig";
+
 
 export default function Categories() {
     const router = useRouter()
     const pathname = usePathname()
-    const currentPost = 'PRESIDENT'
 
     const routeToCategory = (category:string) =>{
       router.push(`${pathname}/${category}`)
@@ -18,7 +19,7 @@ export default function Categories() {
         
         <div className="w-full h-full py-6 bg-primary1Trans flex flex-col gap-2 justify-center items-center">
           <span className="text-white font-prototype text-2xl">Current Post Registration</span>
-          <CurrentPostCard currentPost={currentPost} action={routeToCategory}/>
+          <CurrentPostCard currentPost={currentPost} action={routeToCategory} label="REGISTER"/>
         </div>
         
         <div className="w-full relative px-10 pt-4 flex flex-col items-center gap-3">
