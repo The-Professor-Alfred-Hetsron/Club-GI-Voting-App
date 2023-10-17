@@ -16,7 +16,7 @@ export default function Categories() {
       <main className="h-full w-full relative flex flex-col">
         
         <Image src='/assets/img/background/voting5.png' alt="Background" width={600} height={600} className='w-[400px] absolute left-0 z-0'/>
-        <Image src='/assets/img/background/voting2.png' alt="Background" width={600} height={600} className='w-[500px] absolute left-[520px] z-0'/>
+        <Image src='/assets/img/background/voting2.png' alt="Background" width={600} height={600} className='w-[400px] absolute left-[520px] z-0'/>
         <Image src='/assets/img/votehub-primary.png' alt="Background" width={600} height={600} className='w-[300px] absolute right-4 z-0'/>
 
         <div className="flex flex-col z-10">
@@ -26,7 +26,7 @@ export default function Categories() {
           </div>
           
           <div className="w-full relative px-10 pt-4 flex flex-col items-center gap-3">
-            <span className="text-xl font-whiskygirls text-center">Club GI Bureau Post Presentation</span>
+            <span className="text-2xl font-whiskygirls text-center">Club GI Bureau Post Presentation</span>
             
             {/* Carousel */}
             <BureauCarousel currentPost={currentPost}/>

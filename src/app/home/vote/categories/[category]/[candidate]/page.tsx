@@ -1,5 +1,6 @@
 'use client'
 import { useRouter } from "next/navigation";
+import { Confetti } from "@/components";
 
 export default function Category({params}:{params: {category:string, candidate: string}}){
     const category = decodeURI(params.category)
@@ -13,8 +14,9 @@ export default function Category({params}:{params: {category:string, candidate: 
 
     return (
         <main className="w-full h-full relative px-10 flex flex-col items-center justify-center gap-10">
-            <div className="w-full h-full absolute z-10 flex flex-col items-center justify-evenly">
+            <Confetti/>
 
+            <div className="w-full h-full absolute z-10 flex flex-col items-center justify-evenly">
                 <div className="flex flex-col drop-shadow-lg px-20 gap-4 text-black font-prototype text-5xl text-center">
                     <span className="">Thank you!</span>
                     <span className="">Your vote for <span className="text-primary3">{candidate}</span> as the <span className="text-primary3">{category}</span> Representative has been submitted Successfully</span>
