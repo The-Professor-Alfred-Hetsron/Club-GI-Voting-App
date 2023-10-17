@@ -53,6 +53,7 @@ export default function Auth() {
           if(pseudoMatch && matriculeMatch){
             setError(false)
             console.log("Login");
+            localStorage.setItem('user',pseudo)
             routeToEnabledPage()
           }
           else{
@@ -68,6 +69,7 @@ export default function Auth() {
           if(pseudoMatch && matriculeMatch){
             setError(false)
             console.log("SignUp");
+            localStorage.setItem('user',pseudo)
             routeToEnabledPage()
           }
           else{

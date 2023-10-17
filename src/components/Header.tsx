@@ -1,12 +1,19 @@
 'use client'
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from "next/image";
 import { nameInitials } from '@/hooks/myhooks';
 
 const Header = () => {
-    const username = "The-Professor"
-    const userInitals = nameInitials(username)
+  const [ username, setUsername ] = useState<string>("")
+  const [ userInitals, setUserInitals ] = useState<string>("")
+
+
+    useEffect(()=>{
+      const temp = localStorage.getItem('user')
+      setUsername(temp!=null?temp:"")
+      setUserInitals(nameInitials(temp!=null?temp:""))
+  },[])
   return (
     <header className='w-full bg-white drop-shadow-md py-3 px-10 flex flex-row justify-between text-primary4 items-center'>
         <div className="w-full flex flex-row gap-4 items-center">
