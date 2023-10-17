@@ -1,10 +1,19 @@
 'use client'
 
 import { useRouter, usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function Register() {
   const router = useRouter()
   const pathname = usePathname()
+
+  const [ username, setUsername ] = useState<string>("")
+
+
+    useEffect(()=>{
+      const temp = localStorage.getItem('user')
+      setUsername(temp!=null?temp:"")
+  },[])
 
   const routeToCategories = () =>{
     router.push(`${pathname}/categories`)
@@ -12,7 +21,7 @@ export default function Register() {
     return (
       <main className="w-full h-full flex flex-col items-center justify-center gap-10">
         <div className="flex flex-col gap-4 text-primary3 font-prototype text-5xl text-center">
-          <span className="">Hi Professor !</span>
+          <span className="">Hi {username} !</span>
           <span className="">Welcome to VoteHub</span>
         </div>
 
