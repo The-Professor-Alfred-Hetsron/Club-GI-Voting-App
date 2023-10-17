@@ -4,7 +4,7 @@ export let enableVote = true
 
 export let enableResult = false
 
-export const currentPost = 'PRESDIDENT'
+export const currentPost = 'PRESIDENT'
 
 export const candidatesInfos = [
     {

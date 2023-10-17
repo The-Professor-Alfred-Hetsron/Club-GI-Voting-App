@@ -1,9 +1,7 @@
 'use client'
 
-import { bureauInfo } from "@/constant/appInfo"
-import { BureauMemberCard, CurrentPostCard } from "@/components"
+import { BureauCarousel, CurrentPostCard } from "@/components"
 import { useRouter, usePathname } from "next/navigation";
-import DefaultBureau from "@/types/defaultBureauMember"
 import { currentPost } from "@/constant/adminConfig";
 import Image from 'next/image'
 
@@ -29,21 +27,9 @@ export default function Categories() {
           
           <div className="w-full relative px-10 pt-4 flex flex-col items-center gap-3">
             <span className="text-xl font-whiskygirls text-center">Club GI Bureau Post Presentation</span>
+            
             {/* Carousel */}
-            <div className="relative w-full h-[300px]">
-              <div className="snap-mandatory snap-x py-4 px-8 overflow-x-scroll overflow-y-hidden flex flex-row gap-2 items-start">
-                <div className="snap-center shrink-0">
-                </div>
-                  {
-                    bureauInfo.map((member:DefaultBureau, index:number)=>{
-                      return <BureauMemberCard
-                              key={index}
-                              data={member}
-                              />
-                    })
-                  }
-              </div>
-            </div>
+            <BureauCarousel currentPost={currentPost}/>
           </div>
         </div>
 

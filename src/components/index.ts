@@ -1,6 +1,7 @@
 export { default as Footer} from './Footer'
 export { default as Header} from './Header'
 export { default as BgBlurLoginImg} from './BgBlurLoginImg'
+export { default as BureauCarousel} from './BureauCarousel'
 
 export { default as CurrentMemberCard} from './cards/CurrentMemberCard'
 export { default as BureauMemberCard} from './cards/BureauMemberCard'
