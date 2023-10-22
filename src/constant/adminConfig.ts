@@ -1,6 +1,6 @@
-export let enableRegsiter = true
+export let enableRegsiter = false
 
-export let enableVote = false
+export let enableVote = true
 
 export let enableResult = false
 
